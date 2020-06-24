@@ -9,10 +9,6 @@ public class Circle extends Figure{
         return resut;
     }
 
-    //    public Circle(int i) {
-//
-//    }
-
     @Override
     public void setRadious(int radious) {
         if(this.radious > 0){
