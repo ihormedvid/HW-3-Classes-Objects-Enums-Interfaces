@@ -22,7 +22,7 @@ public class Circle extends Figure{
     }
 
     @Override
-    public double Square(int radious) {
+    public void Square(int radious) {
         return resut = 2 * PI * radious;
     }
 }

@@ -11,7 +11,5 @@ abstract public class Figure {
         return radious;
     }
 
-    public void Square(){}
-
-    public abstract double Square(int radious);
+    public void Square(int radious){}
 }
