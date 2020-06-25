@@ -6,10 +6,6 @@ public class Circle extends Figure{
     private int radius;
     private double result;
 
-    public double getResut() {
-        return result;
-    }
-
     @Override
     public void setRadius(int radious) {
         if(this.radius > 0){
@@ -24,6 +20,6 @@ public class Circle extends Figure{
 
     @Override
     public double Square(int radius) {
-        return result = 2 * PI * radius;
+        return result = Math.PI * Math.pow(this.radius, 2);
     }
 }
