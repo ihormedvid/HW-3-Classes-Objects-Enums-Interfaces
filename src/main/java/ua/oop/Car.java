@@ -1,12 +1,10 @@
-package OOP;
-
-import org.w3c.dom.ls.LSOutput;
+package ua.oop;
 
 public class Car {
     private int speed;
 
     public void setSpeed(int speed) {
-        if(this.speed > 0){
+        if(this.speed >= 0){
             this.speed = speed;
         }
     }
@@ -19,7 +17,15 @@ public class Car {
         System.out.println("Your Car is stopped");
     }
 
+    public void moveCar(){
+        System.out.println("Your car is moving");
+    }
+
     public void cruiseControl(int speed) {
-        System.out.println("your Speed : " + speed);
+        if(speed > 0) {
+            System.out.println("Your сurrent is: " + speed);
+        } else {
+            stopCar();
+        }
     }
 }

@@ -1,12 +1,12 @@
-import OOP.Calculate;
-import OOP.Car;
-import OOP.Circle;
-import OOP.Figure;
+package ua;
+
+import ua.oop.Car;
+import ua.oop.Circle;
+import ua.oop.CountClasses;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -18,6 +18,12 @@ public class Main {
         Circle cicrle = new Circle();
         System.out.println("Your Square = " + cicrle.Square(changeType));
 
+        CountClasses CountClasses1 = new CountClasses();
+        CountClasses CountClasses2 = new CountClasses();
+        CountClasses CountClasses3 = new CountClasses();
+        System.out.println("so many objects have been created: ");
+        CountClasses3.getCountClass();
+
         System.out.println("Please write your Speed: ");
         String speedLine = reader.readLine();
         int speed = Integer.parseInt(speedLine);
@@ -25,6 +31,7 @@ public class Main {
         Car car = new Car();
         car.startCar();
         car.stopCar();
+        car.moveCar();
         car.cruiseControl(speed);
     }
 }
