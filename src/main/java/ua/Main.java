@@ -15,14 +15,12 @@ public class Main {
         String readLine = reader.readLine();
         int changeType = Integer.parseInt(readLine);
 
-        Circle cicrle = new Circle();
-        System.out.println("Your Square = " + cicrle.Square(changeType));
-
-        CountClasses CountClasses1 = new CountClasses();
-        CountClasses CountClasses2 = new CountClasses();
-        CountClasses CountClasses3 = new CountClasses();
-        System.out.println("so many objects have been created: ");
-        CountClasses3.getCountClass();
+        Circle cirсle = new Circle();
+        System.out.println("Your Square = " + cirсle.Square(changeType));
+         new CountClasses();
+         new CountClasses();
+         new CountClasses();
+        System.out.println("so many objects have been created: "+ CountClasses.countClass);
 
         System.out.println("Please write your Speed: ");
         String speedLine = reader.readLine();
@@ -30,8 +28,9 @@ public class Main {
 
         Car car = new Car();
         car.startCar();
-        car.stopCar();
         car.moveCar();
         car.cruiseControl(speed);
+        car.stopCar();
+
     }
 }
